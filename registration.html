@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="/submit-document.php" method="POST">
+        <label for="first_name">First name:</label><br>
+        <input type="text" id="first_name" name="first_name"><br>
+        <label for="last_name">Last name:</label><br>
+        <input type="text" id="last_name" name="last_name"><br>
+        <label for="Email">Email:</label><br>
+        <input type="text" id="Email" name="Email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <label for="age">Age:</label><br>
+        <input type="text" id="age" name="age"><br>
+        <label for="phone_number">Phone number:</label><br>
+        <input type="number" id="phone_number" name="phone_number"><br>
+        <label for="document_type">Gender:</label><br>
+        <select id="document_type" name="document_type" required>
+         <option value="Female">Female</option>
+         <option value="Male" selected="selected">Male</option>
+        <option value="Wouldn't say">Wouldn't say</option>
+         <option value="other">Other</option>
+        </select><br><br>
+       
+    <button type="submit">Registar</button>
+    <input type="hidden" name="user_id" value="12345">
+    </form>
+</body>
+</html>
